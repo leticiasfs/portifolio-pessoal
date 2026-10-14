@@ -1,0 +1,158 @@
+
+:root {
+  --tinta: #1f2347;
+  --papel: #f6f7ff;
+  --lavanda: #aab4ff;
+  --menta: #bdebd3; 
+  --sol: #ffd966;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Bricolage Grotesque", Arial, sans-serif;
+  background-color: var(--papel);
+  color: var(--tinta);
+  line-height: 1.6;
+}
+
+h1 { font-size: 3rem; line-height: 1.1; font-weight: 800; }
+h2 { font-size: 2rem; margin-bottom: 24px; }
+h3 { font-size: 1.25rem; margin-bottom: 8px; }
+
+.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 3px solid var(--tinta);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.menu {
+  display: flex;
+  gap: 24px;
+}
+
+.menu a {
+  color: var(--tinta);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.secao {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 64px 24px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-texto {
+  flex: 1 1 320px;
+}
+
+.hero-texto p {
+  margin: 20px 0 28px;
+  max-width: 480px;
+}
+
+.hero-foto img {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  background-color: var(--lavanda);
+  border: 3px solid var(--tinta);
+  border-radius: 50%;
+  box-shadow: 8px 8px 0 var(--menta);
+}
+
+.botao {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: var(--sol);
+  color: var(--tinta);
+  font-weight: 600;
+  text-decoration: none;
+  border: 3px solid var(--tinta);
+  border-radius: 8px;
+  box-shadow: 4px 4px 0 var(--tinta);
+}
+
+.botao:hover {
+  background-color: var(--menta);
+}
+
+.linha {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.cartao {
+  flex: 1 1 260px;
+  padding: 24px;
+  background-color: white;
+  border: 3px solid var(--tinta);
+  border-radius: 12px;
+}
+
+.projeto {
+  background-color: var(--lavanda);
+}
+
+.etiqueta {
+  display: inline-block;
+  margin: 12px 8px 0 0;
+  padding: 2px 12px;
+  background-color: var(--papel);
+  border: 2px solid var(--tinta);
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.contato-caixa {
+  padding: 32px;
+  background-color: var(--menta);
+  border: 3px solid var(--tinta);
+  border-radius: 12px;
+}
+
+.contato-caixa ul {
+  margin-top: 12px;
+  margin-left: 24px;
+}
+
+.rodape {
+  padding: 24px;
+  text-align: center;
+  background-color: var(--tinta);
+  color: var(--papel);
+}
+
+@media (max-width: 600px) {
+  .topo {
+    flex-direction: column;
+    gap: 12px;
+  }
+  h1 { font-size: 2.25rem; }
+}
