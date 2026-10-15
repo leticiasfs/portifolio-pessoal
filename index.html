@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portifólio Pessoal</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leticia | Portfólio</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
   <header class="topo">
-    <div class="logo">Leticia</div>
+    <div class="logo">Meu portifólio pessoal</div>
     <nav class="menu">
       <a href="#sobre">Sobre</a>
       <a href="#habilidades">Habilidades</a>
@@ -17,80 +17,118 @@
       <a href="#contato">Contato</a>
     </nav>
   </header>
- 
+
   <main>
- 
-   
-    <section class="secao hero" id="sobre">
+
+    <section class="secao hero" id="inicio">
       <div class="hero-texto">
         <h1>Oi, eu sou a Leticia.</h1>
-        <p>Estudante de Análise e Desenvolvimento de Sistemas, aprendendo a criar páginas web do zero. Este portfólio é feito apenas com HTML e CSS.</p>
-        <a class="botao" href="#projetos">Ver projetos</a>
+        <p>Estudante de Análise e Desenvolvimento de Sistemas, aprendendo a criar páginas web do zero. Este portfólio é feito só com HTML e CSS.</p>
+        <div class="tags">
+          <span class="etiqueta">HTML</span>
+          <span class="etiqueta">CSS</span>
+          <span class="etiqueta">Flexbox</span>
+          <span class="etiqueta">Grid</span>
+        </div>
+        <div class="botoes">
+          <a class="botao" href="#projetos">Ver projetos</a>
+          <a class="botao botao-claro" href="#contato">Falar comigo</a>
+        </div>
       </div>
       <div class="hero-foto">
-        <img src="img/foto-leticia.jpg" alt="foto-leticia">
+        <img src="img/foto-leticia.jpg" alt="Foto da Leticia">
       </div>
     </section>
- 
+
+    <section class="secao" id="sobre">
+      <h2>Sobre mim</h2>
+      <div class="sobre">
+        <article class="sobre-texto">
+          <p>Sou estudante de Análise e Desenvolvimento de Sistemas, com foco em desenvolvimento web, banco de dados e design de interfaces (UI/UX). Tenho experiência com Python, SQL e prototipagem no Figma, além de vivência em rotinas administrativas e gestão de processos. Busco constantemente criar soluções eficientes, funcionais e focadas na experiência do usuário.</p>
+    
+        </article>
+        <aside class="fatos">
+          <h3>Resumo</h3>
+          <ul>
+            <li>Formação: ADS, Faculdade Senac Minas Contagem</li>
+            <li>Semestre: 2º</li>
+            <li>Cidade: Belo Horizonte, Brasil</li>
+            <li>Aprendendo: HTML, CSS, JavaScript, Phyton, Banco de dados, POO</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
 
     <section class="secao" id="habilidades">
       <h2>Habilidades</h2>
       <div class="linha">
-        <div class="cartao">
+        <article class="cartao hab hab-lavanda">
           <h3>HTML</h3>
-          <p>Estrutura da página com títulos, parágrafos, listas, imagens e links.</p>
-        </div>
-        <div class="cartao">
+          <p>Estrutura da página com títulos, parágrafos, listas, imagens, links e tags semânticas como header, main e footer.</p>
+        </article>
+        <article class="cartao hab hab-menta">
           <h3>CSS</h3>
-          <p>Cores, fontes, margin, border e padding para deixar tudo organizado.</p>
-        </div>
-        <div class="cartao">
+          <p>Cores, fontes, margin, padding, border e border-radius para deixar tudo organizado e bonito.</p>
+        </article>
+        <article class="cartao hab hab-sol">
           <h3>Flexbox</h3>
-          <p>Alinhar e distribuir elementos lado a lado dentro de uma div pai.</p>
-        </div>
+          <p>Alinhar e distribuir elementos lado a lado dentro de uma div pai, com justify-content, align-items e gap.</p>
+        </article>
+        <article class="cartao hab hab-lavanda">
+          <h3>Grid</h3>
+          <p>Montar layouts em linhas e colunas ao mesmo tempo, com repeat, minmax e grid-template-areas.</p>
+        </article>
       </div>
     </section>
- 
+
     <section class="secao" id="projetos">
       <h2>Projetos</h2>
       <div class="linha">
-        <div class="cartao projeto">
-          <h3>Projeto 1</h3>
-          <p>adicionar projeto depois.</p>
-          <span class="etiqueta">HTML</span>
-          <span class="etiqueta">CSS</span>
-        </div>
-        <div class="cartao projeto">
-          <h3>Projeto 2</h3>
-          <p>adicionar projeto depois.</p>
-          <span class="etiqueta">HTML</span>
-          <span class="etiqueta">CSS</span>
-        </div>
-        <div class="cartao projeto">
-          <h3>Projeto 3</h3>
-          <p>adicionar projeto depois.</p>
-          <span class="etiqueta">HTML</span>
-          <span class="etiqueta">CSS</span>
-        </div>
+        <article class="cartao projeto">
+          <div class="capa capa-app">
+            <img src="img/projeto-sympla.png" alt="Telas do app Sympla recriado no Figma">
+          </div>
+          <h3>App Sympla no Figma</h3>
+          <p>Recriação das telas do aplicativo Sympla: página inicial com eventos em destaque, coleções por categoria e menu de navegação. Feito somente no Figma.</p>
+          <div class="tags">
+            <span class="etiqueta">Figma</span>
+            <span class="etiqueta">Design de interface</span>
+          </div>
+        </article>
+        <article class="cartao projeto">
+          <div class="capa">
+            <img src="img/projeto-ecokids.png" alt="Layout do site EcoKids no Figma">
+          </div>
+          <h3>EcoKids (projeto integrador)</h3>
+          <p>Site de educação ambiental com jogos e dicas rápidas guiadas pelo Tito, a tartaruga. O layout já está pronto no Figma e a versão com JavaScript vem a seguir.</p>
+          <div class="tags">
+            <span class="etiqueta">Figma</span>
+            <span class="etiqueta">Em andamento</span>
+            <span class="etiqueta">JavaScript em breve</span>
+          </div>
+        </article>
       </div>
     </section>
- 
+
     <section class="secao" id="contato">
       <h2>Contato</h2>
       <div class="contato-caixa">
-        <p>Quer conversar? Me chame por aqui:</p>
-        <ul>
-          <li>E-mail: leticiaemanuelle.sfs@gmail.com</li>
-          <li>LinkedIn: linkedin.com/in/leticia-emanuelle-silva</li>
-          <li>GitHub: github.com/leticiasfs</li>
+        <div class="contato-texto">
+          <h3>Vamos conversar?</h3>
+          <p>Me chame por um dos canais ao lado. Vou adorar saber o que você achou do portfólio.</p>
+        </div>
+        <ul class="contato-lista">
+          <li><a href="mailto:leticiaemanuelle.sfs@gmail.com">leticiaemanuelle.sfs@gmail.com</a></li>
+          <li><a href="https://linkedin.com/in/leticia-emanuelle-silva-11076536b/" target="_blank">linkedin.com/in/leticia-emanuelle-silva</a></li>
+          <li><a href="https://github.com/leticiasfs" target="_blank">github.com/leticiasfs</a></li>
         </ul>
       </div>
     </section>
- 
+
   </main>
- 
+
   <footer class="rodape">
-    <p>Feito por Leticia com HTML e CSS</p>
+    <p>Feito por Leticia Emanuelle com HTML e CSS</p>
   </footer>
 
 </body>
